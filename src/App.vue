@@ -7,7 +7,9 @@
     <Hello />
     <hr />
     <div>test avec scope</div>
-    <Hello> <hello-world slot-scope="hello" :message="hello.message" /> </Hello>
+    <HelloSimple>
+      <hello-world slot-scope="hello" :message="hello.message" />
+    </HelloSimple>
   </div>
 </template>
 
@@ -20,7 +22,8 @@ export default {
   name: "App",
   components: {
     helloWorld: HelloWorld,
-    Hello: Vue.extend(HelloWorld).extend(Hello)
+    Hello: Vue.extend(HelloWorld).extend(Hello),
+    HelloSimple: Hello
   }
 };
 </script>
