@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{ message }}</h2>
+    <h3>message from HelloWorld Component</h3>
   </div>
 </template>
 
@@ -26,17 +27,7 @@ export default {
 <style scoped>
 h1,
 h2 {
+  color: tomato;
   font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>

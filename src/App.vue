@@ -5,11 +5,6 @@
     <hr />
     <div>test avec JS inheritance</div>
     <Hello />
-    <hr />
-    <div>test avec scope</div>
-    <HelloSimple>
-      <hello-world slot-scope="hello" :message="hello.message" />
-    </HelloSimple>
   </div>
 </template>
 
